@@ -1,160 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Registartion Form</title>
-    <link rel="stylesheet" href="./style.css">
+	<title>Student Registration Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Lato&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="main-container" id="main-container">
-        <section class="student-registartion-form" id="student-registartion-form">
-            <h2>Student Registartion Form</h2>
-            <form method="POST" action="https://formsubmit.co/e599b86b153156656b1f02e4938a104b">
-              <div class="form-group">
-                <label for="first-name">First Name:</label>
-                <input type="text" id="first-name" name="first-name" required>
-              </div>
-          
-              <div class="form-group">
-                <label for="last-name">Last Name:</label>
-                <input type="text" id="last-name" name="last-name" required>
-              </div>
-          
-              <div class="form-group">
-                <label for="email">Email ID:</label>
-                <input type="email" id="email" name="email" required>
-              </div>
-          
-              <div class="form-group">
-                <label for="contact-number">Mobile Number:</label>
-                <input type="tel" id="contact-number" name="contact-number" required>
-              </div>
-          
-              <div class="form-group">
-                <label for="gender">Gender:</label>
-                <input type="radio" id="contact-number" name="gender" value="Male">
-                <label for="gender">Male</label>
-                <input type="radio" id="contact-number" name="gender" value="Female">
-                <label for="gender">Female</label>
-                <input type="radio" id="contact-number" name="gender" value="Other">
-                <label for="gender">Other</label>
-              </div>
-
-              <div class="form-group">
-                <label for="dob">Date of Birth (DOB):</label>
-                <select name="dob" id="dob">
-                    <option value="">Date</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>
-                    <option value="14">14</option>
-                    <option value="15">15</option>
-                    <option value="16">16</option>
-                    <option value="17">17</option>
-                    <option value="18">18</option>
-                    <option value="19">19</option>
-                    <option value="20">20</option>
-                    <option value="21">21</option>
-                    <option value="22">22</option>
-                    <option value="23">23</option>
-                    <option value="24">24</option>
-                    <option value="25">25</option>
-                    <option value="26">26</option>
-                    <option value="27">27</option>
-                    <option value="28">28</option>
-                    <option value="29">29</option>
-                    <option value="30">30</option>
-                    <option value="31">31</option>
-                </select>
-                <select name="dob" id="dob">
-                    <option value="">Month</option>
-                    <option value="1">Jan</option>
-                    <option value="2">Feb</option>
-                    <option value="3">Mar</option>
-                    <option value="4">Apr</option>
-                    <option value="5">May</option>
-                    <option value="6">Jun</option>
-                    <option value="7">Jul</option>
-                    <option value="8">Aug</option>
-                    <option value="9">Sep</option>
-                    <option value="10">Oct</option>
-                    <option value="11">Nov</option>
-                    <option value="12">Dec</option>
-                </select>
-                <select name="dob" id="dob">
-                    <option value="">Year</option>
-                    <option value="1">1990</option>
-                    <option value="2">1991</option>
-                    <option value="3">1992</option>
-                    <option value="4">1993</option>
-                    <option value="5">1994</option>
-                    <option value="6">1995</option>
-                    <option value="7">1996</option>
-                    <option value="8">1997</option>
-                    <option value="9">1998</option>
-                    <option value="10">1999</option>
-                    <option value="11">2000</option>
-                    <option value="12">2001</option>
-                </select>
-              </div>
-
-              <div class="form-group">
-                <label for="address">Address:</label>
-                <textarea id="address" name="address" rows="5" required></textarea>
-              </div>
-
-              <div class="form-group">
-                <label for="ciry">City:</label>
-                <input type="text" id="city" name="city" required>
-              </div>
-
-              <div class="form-group">
-                <label for="pin">Pin Code:</label>
-                <input type="text" id="pin" name="pin" required>
-              </div>
-
-              <div class="form-group">
-                <label for="state">State:</label>
-                <input type="text" id="state" name="state" required>
-              </div>
-
-              <div class="form-group">
-                <label for="country">Country:</label>
-                <input type="text" id="country" name="country" required>
-              </div>
-
-              <div class="form-group">
-                <label for="hobbies">Hobbies:</label>
-                <input type="checkbox" id="hobbies" name="hobbies" required>
-                <label for="hobbies">Drawing</label>
-                <input type="checkbox" name="Drawing" id="hobbies">
-                <label for="hobbies">Singing</label>
-                <input type="checkbox" name="Singing" id="hobbies">
-                <label for="hobbies">Dancing</label>
-                <input type="checkbox" name="Dancing" id="hobbies">
-                <label for="hobbies">Sketching</label>
-                <input type="checkbox" name="Sketching" id="hobbies"><br>
-                <label for="hobbies">Other</label>
-                <input type="text" name="Other" id="hobbies">
-              </div>
-
-              <div class="form-group">
-                <button type="submit">Submit</button>
-              </div>
-            </form>
-          </section>
-    </div>
-</body>
-</html>
+	<h1>Student Registration Form</h1>
+	<form>
+		<table align="center">
+			<tr>
+				<td>First Name:</td>
+				<td><input type="text" name="fname"></td>
+			</tr>
+			<tr>
+				<td>Last Name:</td>
+				<td><input type="text" name="lname"></td>
+			</tr>
+			<tr>
+				<td>Email ID:</td>
+				<td><input type="email" name="email"></td>
+			</tr>
+			<tr>
+				<td>Mobile Number:</td>
+				<td><input type="tel" name="phone"></td>
+			</tr>
+			<tr>
+				<td>Gender:</td>
+				<td>
+					<input type="radio" name="gender" value="male"> Male
+					<input type="radio" name="gender" value="female"> Female
+					<input type="radio" name="gender" value="other"> Other
+				</td>
+			</tr>
+			<tr>
+				<td>Date of Birth (DOB):</td>
+				<td>
+					<select name="date">
+						<option value="" selected>Date</option>
+						<?php for($i=1;$i<=31;$i++) echo "<option value='$i'>$i</option>"; ?>
+					</select>
+					<select name="month">
+						<option value="" selected>Month</option>
+						<?php for($i=1;$i<=12;$i++) echo "<option value='$i'>$i</option>"; ?>
+					</select>
+					<select name="year">
+						<option value="" selected>Year</option>
+						<?php for($i=1950;$i<=2023;$i++) echo "<option value='$i'>$i</option>"; ?>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Address:</td>
+				<td><textarea name="address" rows="4" cols="30"></textarea></td>
+			</tr>
+			<tr>
+				<td>City:</td>
+				<td><input type="text" name="city"></td>
+			</tr>
+			<tr>
+				<td>Pin Code:</td>
+				<td><input type="text" name="pin"></td>
+			</tr>
+			<tr>
+				<td>State:</td>
+				<td><input type="text" name="state"></td>
+			</tr>
+			<tr>
+				<td>Country:</td>
+				<td><input type="text" name="country"></td>
+			</tr>
+			<tr>
+				<td>Hobbies:</td>
+				<td>
+					<input type="checkbox" name="hobbies[]" value="drawing"> Drawing
+					<input type="checkbox" name="hobbies[]" value="singing"> Singing
+					<input type="checkbox" name="hobbies[]" value="dancing"> Dancing
+					<input type="checkbox" name="hobbies[]" value="sketching"> Sketching
+					<input type="checkbox" name="hobbies[]" value="other"> Other
+				</td>
+                <tr>
+                    <td>
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+    </html>
+    
